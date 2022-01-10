@@ -6,7 +6,7 @@ object Report1 {
   def run(): Unit = {
     val a = 93
     val b = 35
-    val res = AdditionInCNF2.exec(a, b)
+    val res = AdditionInCNF.exec(a, b)
     assert(a + b == res)
     println(res)
   }
@@ -128,8 +128,6 @@ object Report6 {
     println("end")
   }
 }
-object Report7 {}
-object Report8 {}
 
 object Report9 {
 
@@ -137,13 +135,9 @@ object Report9 {
   implicit def symbol2bool(p: Symbol): Bool = Bool(p.name)
 
   def run(): Unit = {
-
     val case1 = Sequent(List('p && ('q || 'r)), List(('p || 'q) && ('p || 'r)))
-
     val case2 = Sequent(List(), List(('a ==> 'b) || ('b ==> 'a)))
-
     val case3 = Sequent(List('p && ('q || 'r)), List('p && 'r))
-
     Seq(case1, case2, case3).foreach { seq =>
       LK.prove(seq) match {
         case Some(prf) => prf.getProofFigure()
@@ -154,5 +148,5 @@ object Report9 {
 }
 
 object main extends App {
-  Report4.run()
+  Report9.run()
 }
