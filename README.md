@@ -10,7 +10,7 @@ example. 93 + 35
 
 Given two numbers, implement a conversion program to CNF sugguested form for multiplication, and confirm it result by SAT solvers (e.g., miniSAT).
 
-example. 93 + 35 
+example. 15 * 4 
 ![image](https://user-images.githubusercontent.com/55380603/148955641-59bb20c9-89d2-495a-916e-72ffe66c5030.png)
 
 4- Examples of CNF encoding 
