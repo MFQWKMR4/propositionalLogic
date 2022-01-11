@@ -1,4 +1,3 @@
-# propositionalLogic
 
 1. Examples of CNF encoding
 Given two numbers, implement a conversion program to CNF sugguested form for addition, and confirm it result by SAT solvers (e.g., miniSAT).
